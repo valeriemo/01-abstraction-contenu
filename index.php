@@ -19,6 +19,23 @@ require_once("data.php");
             <h1><?= $section["nom"]?></h1>
             <p><?php if (isset($section["description"])) echo $section["description"] ?></p>
 
+            <section>
+                <?php foreach ($section["sous-sections"] as $sousSections): ?>
+                <h2><?= $sousSections["nom"];?></h2>
+                <p><?php if (isset($sousSections["description"])) echo $sousSections["description"] ?></p>
+                <section>
+                    <?php foreach ($sousSections["repas"] as $repas): ?>
+                        <h3><?= $repas["nom"];?></h3>
+                        <span><?= $repas["qte"];?><span>
+                        <span><?= $repas["prix"];?><span>
+                        <?php foreach ($repas["ingrédients"] as $ingredient): ?>
+                            <div><?= $ingredient?></div>
+                        <?php endforeach; ?>
+                    <?php endforeach; ?>
+                </section>    
+                <?php endforeach; ?>
+            </section>
+            
         </section>
         <?php endforeach; ?>
     </main>

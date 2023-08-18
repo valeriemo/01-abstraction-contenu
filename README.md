@@ -2,6 +2,32 @@
 exercice 01
 
 
+
+
+- définitions (chiffre romain)
+    - exemples
+        - exemple
+            - texte
+            - auteur
+            - titre
+            - annees
+            - pages
+    - définitions (lettre)
+        - définition (lettre)
+            - exemples
+                - exemple
+            - remarque: "..."
+            - définitions (tiret)
+                - définition (tiret)
+                    - syntagme (italic-span)
+                    - définitions (diamant)
+                        - définition (diamant)
+                            - exemples
+                                - exemple
+                    - exemples
+                        - exemple
+
+
 # Spécialités
 
 1. L'inattendue - La fameuse pizza sushi

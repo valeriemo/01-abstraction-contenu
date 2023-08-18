@@ -40,10 +40,33 @@ $data = [
         "sections" => [
             [
                 "nom" => "Omakase",
-                "description" => "Menu dégustation au choix du Chef (Chaque changement ou demande particulière apportera un supplément",  
+                "description" => "Menu dégustation au choix du Chef (Chaque changement ou demande particulière apportera un supplément",
+                "sous-sections" => [
+                    [
+                        "nom" => "Menu pour une personne",
+                        "description" => null,
+                        "repas" => [
+                            [
+                                "nom" => "Omakase 1",
+                                "qte" => "(1 personne)",
+                                "prix" => "33",
+                                "ingrédients" => ["4mcx sashimi nouveau style", "4 mcx nigiri", "10 mcx maki"]
+                            ]
+                        ]
+                    ],
+                    [
+                        "nom" => "Menu à partager",
+                        "description" => null,
+                        "repas" => [
+                            [
+                                "nom"
+                            ]
+                        ]
+                    ]
+                ]  
             ],
             [
-                "nom" => "specialités",
+                "nom" => "Spécialités",
                 "description" => null
             ]           
         ]
