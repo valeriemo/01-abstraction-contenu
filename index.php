@@ -23,6 +23,7 @@ require_once("data.php");
                 <?php foreach ($section["sous-sections"] as $sousSections): ?>
                 <h2><?= $sousSections["nom"];?></h2>
                 <p><?php if (isset($sousSections["description"])) echo $sousSections["description"] ?></p>
+
                 <section>
                     <?php foreach ($sousSections["repas"] as $repas): ?>
                         <h3><?= $repas["nom"];?></h3>
@@ -32,12 +33,14 @@ require_once("data.php");
                             <div><?= $ingredient?></div>
                         <?php endforeach; ?>
                     <?php endforeach; ?>
-                </section>    
+                </section>
+
                 <?php endforeach; ?>
             </section>
             
         </section>
-        <?php endforeach; ?>
+        
+    <?php endforeach; ?>
     </main>
     
 </body>
